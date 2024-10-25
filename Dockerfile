@@ -9,5 +9,5 @@ LABEL maintainer="Thien Tran contact@tommytran.io"
 
 RUN zypper dup -y
 
-RUN useradd -u ${UID} --disabled-password --system kanidm
+RUN useradd -u ${UID} --system kanidm
 USER kanidm
