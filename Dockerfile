@@ -1,5 +1,4 @@
 ARG UID=3005
-ARG GID=3005
 
 FROM kanidm/server
 
@@ -10,5 +9,5 @@ LABEL maintainer="Thien Tran contact@tommytran.io"
 
 RUN zypper dup -y
 
-RUN useradd -u ${UID} -g ${GID} --disabled-password --system kanidm
+RUN useradd -u ${UID} --disabled-password --system kanidm
 USER kanidm
